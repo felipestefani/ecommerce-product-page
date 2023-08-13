@@ -1,0 +1,35 @@
+
+.menu_visible {
+    display: none;
+}
+
+.menu_hamburguer_container {
+    width: 1.5em;
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .menu_visible {
+        display: inline;
+    }
+
+    .menu_hamburguer_container {
+        width: 1.5em;
+        padding-top: 0.4em;
+    }
+
+    .menu_hamburguer_container{
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu_visible {
+        display: inline;
+    }  
+
+    .menu_hamburguer_container{
+        margin-left: 3em;
+        width: 1.2em;
+        padding-top: 0.4em;
+    }
+}

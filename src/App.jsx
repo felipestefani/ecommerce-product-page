@@ -1,32 +1,39 @@
-<style>
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-</style>
-</head>
-<body>
+import TheFooter from "./components/TheFooter"
+import NavigationBar from "./components/NavigationBar";
+import DisplaySection from "./components/DisplaySection";
 
-Collections
-Men
-Women
-About
-Contact
+const App = () => {
+    return (
+        <div className="app_container">
+            <NavigationBar />
+            <hr />
+            <main>
+                <section>
+                    <DisplaySection />
+                </section>
+                <section>
+                Sneaker Company
+            
+            Fall Limited Edition Sneakers
+            
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+            
+            $125.00
+            50%
+            $250.00
+            
+            0
+            Add to cart
+                </section>
+            </main>
 
-Sneaker Company
+            
+            
+            <TheFooter />
+        </div>
+    )
+}
 
-Fall Limited Edition Sneakers
+export default App
 
-These low-profile sneakers are your perfect casual wear companion. Featuring a 
-durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-$125.00
-50%
-$250.00
-
-0
-Add to cart
-
-<div class="attribution">
-Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-Coded by <a href="#">Your Name Here</a>.
-</div>
-</body>

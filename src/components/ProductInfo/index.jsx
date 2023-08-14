@@ -2,16 +2,14 @@ import style from "./style.module.css";
 import minus from "../../assets/images/icon-minus.svg";
 import plus from "../../assets/images/icon-plus.svg";
 import cart from "../../assets/images/icon-cart.svg";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MainContext } from "../../contexts/MainContext";
 
 const ProductInfo = () => {
 
     const { quantity, setQuantity } = useContext(MainContext)
-    // const [quantity, setQuantity] = useState(0) 
     const increase = () => setQuantity(count => count + 1)
     const decrease = () => { quantity > 0 ? setQuantity( count => count -1) : '' }
-
 
     return (
         <div className={style.product_info_container}> 

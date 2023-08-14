@@ -1,0 +1,141 @@
+.product_info_container {
+    max-width:30em;
+}
+
+.company_name {
+    color: var(--orange);
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 12px;
+}
+
+.product_title {
+    font-size: 48px;
+    margin-bottom: 0.6em;
+    line-height: 1em;
+}
+
+.product_text_info{
+    color: var(--dark-grayish-blue);
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.after_discount {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3em;
+}
+
+.discount {
+    color: var(--orange);
+    background-color: var(--pale-orange);
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    margin-left: 1em;
+    width: fit-content;
+}
+
+.before_discount {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    text-decoration: line-through;
+    margin-bottom: 2em;
+}
+
+.action_section {
+    display: flex;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--light-grayish-blue);
+    padding: 1em;
+    gap: 2em;
+    border-radius: 8px;
+    margin-right: 1.5em;
+    font-weight: 700;
+}
+
+.minus, .plus{
+    width: 1em;
+}
+
+.quantity_value {
+    width: fit-content;
+    min-width: 2em;
+    text-align: center;
+}
+
+.add_to_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    background-color: var(--orange);
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px var(--pale-orange);
+}
+
+.cart_icon {
+    width: 1.2em;
+    margin-right: 1em;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 425px) {
+    .product_info_container {
+        padding: 1.5em;
+    }
+
+    .company_name{
+        letter-spacing: 0.1em;
+    }
+
+    .product_title {
+        font-size: 30px;
+    }
+
+    .product_text_info {
+        font-size: 15px;
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .after_discount {
+        margin: 0;
+    }
+
+    .before_discount {
+        width: fit-content;
+        margin: 0;
+    }
+
+    .action_section {
+        flex-direction: column;
+    }
+
+    .quantity {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .add_to_cart {
+        padding: 1em 0;
+    }
+}

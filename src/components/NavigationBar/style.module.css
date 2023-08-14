@@ -27,7 +27,6 @@
     height: 3em;
 }
 
-
 /*------------ hover status --------------*/
 .nav_item:hover {
     padding-bottom: calc(3em - 4px);

@@ -23,18 +23,30 @@ const DisplaySection = () => {
         setThumbImage(thumb)
     }
 
+    const nextImage = () => {
+        images.indexOf(mainImage) == images.length - 1 
+        ? setMainImage(images[0])
+        : setMainImage(images[images.indexOf(mainImage)+1])
+    }
+
+    const previousImage = () => {
+        images.indexOf(mainImage) == 0 
+        ? setMainImage(images[images.length - 1])
+        : setMainImage(images[images.indexOf(mainImage)-1])
+    }
+
     return (
         <div className={style.display_section_container}>
             <div className={style.main_image}>
                 <div className={style.display_previous_button}>
                     <div className={style.previous_button}>
-                        <img className={style.previous_icon} src={previous} alt="previous icon" />
+                        <img className={style.previous_icon} src={previous} alt="previous icon" onClick={previousImage}/>
                     </div>
                 </div>
                 <img className={style.product_image} src={mainImage} alt="main product image"/>    
                 <div className={style.display_next_button}>
                     <div className={style.next_button}>
-                        <img className={style.next_icon} src={next} alt="next icon" />
+                        <img className={style.next_icon} src={next} alt="next icon" onClick={nextImage}/>
                     </div>
                 </div>
             </div>

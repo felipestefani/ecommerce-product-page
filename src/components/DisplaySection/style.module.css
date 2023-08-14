@@ -10,6 +10,11 @@
     display: flex;
     justify-content: center;
 }
+
+.display_previous_button, .display_next_button {
+    display: none;
+}
+
 .product_image {
     max-width: 28em;
     border-radius: 1em;
@@ -69,7 +74,9 @@
     .main_image {
         margin-left: 2em;
         max-height: 25em;
+        position: relative;
     }
+
     .product_image {
         max-width: none;
     }
@@ -101,11 +108,56 @@
     .main_image {
         max-width: none;
         max-height: 20em;
+        position: relative;
     }
+    .display_previous_button, .display_next_button {
+        display: block;
+    }
+
     .product_image {
         max-width: none;
         object-fit: cover;
         border-radius: 0;
+    }
+    .previous_button {
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        top: 50%;
+        left: 1em;
+        transform: translate(0, -50%);
+        background-color: var(--white);
+        z-index: 23;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1em;
+        border-radius: 100%;
+    }
+    .next_button {
+        width: 1em;
+        height: 1em;
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        transform: translate(0, -50%);
+        background-color: var(--white);
+        z-index: 23;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1em;
+        border-radius: 100%;
+    }
+    .previous_icon {
+        width: 0.5em;
+        position: absolute;
+        left: 0.7em;
+    }
+    .next_icon {
+        width: 0.5em;
+        position: absolute;
+        right: 0.7em;
     }
     .display_thumbnails {
         display: none;

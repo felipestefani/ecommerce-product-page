@@ -8,6 +8,14 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media (max-width: 768px) and (min-width: 426px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        margin: 2em 0;
+    }
+}
+
 @media (max-width: 425px) {
     footer {
         position: relative;

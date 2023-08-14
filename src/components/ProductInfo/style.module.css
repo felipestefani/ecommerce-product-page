@@ -92,6 +92,43 @@
     filter: brightness(0) invert(1);
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+    .product_info_container {
+        padding: 0 1em;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    .product_info_container {
+        padding: 2em;
+        max-width: none;
+    }
+
+    .product_title {
+        font-size: 32px;
+    }
+
+    .product_text_info {
+        font-size: 16px;
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .after_discount {
+        margin: 0;
+    }
+
+    .before_discount {
+        width: fit-content;
+        margin: 0;
+    }
+}
+
 @media (max-width: 425px) {
     .product_info_container {
         padding: 1.5em;

@@ -7,6 +7,8 @@ import thumb_1 from '../../assets/images/image-product-1-thumbnail.jpg'
 import thumb_2 from '../../assets/images/image-product-2-thumbnail.jpg'
 import thumb_3 from '../../assets/images/image-product-3-thumbnail.jpg'
 import thumb_4 from '../../assets/images/image-product-4-thumbnail.jpg'
+import next from "../../assets/images/icon-next.svg";
+import previous from "../../assets/images/icon-previous.svg";
 import { useState } from "react";
 
 const DisplaySection = () => {
@@ -24,7 +26,17 @@ const DisplaySection = () => {
     return (
         <div className={style.display_section_container}>
             <div className={style.main_image}>
+                <div className={style.display_previous_button}>
+                    <div className={style.previous_button}>
+                        <img className={style.previous_icon} src={previous} alt="previous icon" />
+                    </div>
+                </div>
                 <img className={style.product_image} src={mainImage} alt="main product image"/>    
+                <div className={style.display_next_button}>
+                    <div className={style.next_button}>
+                        <img className={style.next_icon} src={next} alt="next icon" />
+                    </div>
+                </div>
             </div>
             <div className={`${style.thumbnails} ${style.display_thumbnails}`}>
                 {

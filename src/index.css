@@ -2,11 +2,13 @@
 
 :root {
     --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
 
     --dark-grayish-blue: hsl(219, 9%, 45%);
     --grayish-blue: hsl(220, 14%, 75%);
     --light-grayish-blue: hsl(223, 64%, 98%);
-
+    --black: hsl(0, 0%, 0%);   
+    --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -49,8 +51,22 @@ main {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 426px) {
     hr {
         display: none;
+    }
+    main {
+        padding-top: 1em;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    hr {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+        padding-top: 1em;
     }
 }

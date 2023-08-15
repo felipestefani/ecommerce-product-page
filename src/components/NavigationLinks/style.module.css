@@ -14,6 +14,13 @@
     font-size: 18px;
 }
 
+.nav_item a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+    padding: 3em 0;
+    font-size: 18px;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
 
     .nav_items_list{

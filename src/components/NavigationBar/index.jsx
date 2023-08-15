@@ -27,7 +27,7 @@ const NavigationBar = () => {
                 <div className={style.total_cart}>
                     <img className={style.cart} src={cart} alt="cart" onClick={openModal} onMouseEnter={openModal} onMouseOut={closeModal}/>
                     <span className={style.cart_quantity} hidden={quantityInCart == 0 ? true : false}>{quantityInCart}</span>
-                    <CartModal isOpen={isModalOpen} onClose={closeModal} onMouseEnter={openModal}/>
+                    <CartModal isOpen={isModalOpen} closeModal={closeModal} onMouseEnter={openModal}/>
                 </div>
                 <img className={style.avatar} src={avatar} alt="avatar" />
             </div>

@@ -1,0 +1,31 @@
+
+.modal_cart_container {
+    position: absolute;
+    /* z-index: 99;
+    position: absolute;
+    box-shadow: 3px 3px 10px black;
+    top: 4em;
+    right: 50%;
+    transform: translate(50%,0);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: max-content; */
+}
+
+.modal_overlay {
+    position: absolute;
+    top: -0.2em;
+    padding: 2em 5em;
+    background-color: hsla(0, 0%, 0%, 0.185);
+  }
+
+.cart_title {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1em;
+}
+
+.empty_cart {
+    padding: 3em;
+}

@@ -7,9 +7,13 @@ import { MainContext } from "../../contexts/MainContext";
 
 const ProductInfo = () => {
 
-    const { quantity, setQuantity } = useContext(MainContext)
+    const { quantity, setQuantity, quantityInCart, setQuantityInCart } = useContext(MainContext)
     const increase = () => setQuantity(count => count + 1)
     const decrease = () => { quantity > 0 ? setQuantity( count => count -1) : '' }
+    const addToCart = () => {
+        setQuantityInCart(count => count + quantity)
+        setQuantity(0)
+    }
 
     return (
         <div className={style.product_info_container}> 
@@ -27,7 +31,7 @@ const ProductInfo = () => {
                     <span className={style.quantity_value}>{quantity}</span>
                     <img className={style.plus} src={plus} alt="plus icon" onClick={increase}/>
                 </div>
-                <button className={style.add_to_cart}><img className={style.cart_icon} src={cart} alt="cart icon" /> Add to cart</button>
+                <button className={style.add_to_cart} onClick={addToCart}><img className={style.cart_icon} src={cart} alt="cart icon"/>Add to cart</button>
             </div>
 
         </div>

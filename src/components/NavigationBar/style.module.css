@@ -17,9 +17,28 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+.total_cart {
+    width: fit-content;
+    position: relative;
+}
+
 .cart{
     width: 1.5em;
     margin-right: 4em;
+}
+
+.cart_quantity {
+    width: fit-content;
+    position: absolute;
+    top: -0.5em;
+    left: 1em;
+    font-size: 10px;
+    padding: 0 0.8em;
+    background-color: var(--orange);
+    border-radius: 100px;
+    font-weight: 700;
+    color: var(--white);
 }
 
 .avatar{
@@ -80,6 +99,8 @@
         width: 2em;
         margin-right: 2em;
     }
+
+
 
     .avatar{
         width: 3em;

@@ -44,6 +44,14 @@
     border-radius: 0.5em;
 }
 
+/*---------------------- hover status --------------------*/
+.thumbnail_image:hover {
+    cursor: pointer;
+    filter: opacity(0.4)
+}
+
+
+
 @media (max-width: 1024px) and (min-width: 769px) {
     .display_section_container {
         margin: 0 1em;

@@ -1,0 +1,131 @@
+
+.image_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.image_modal_container {
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin-top: 9em;
+}
+
+.image_modal_close {
+    width: 1.5em;
+    position: absolute;
+    right: 0;
+    top: -3.5em;
+    filter: brightness(0) invert(1);
+}
+
+.main_image_container {
+    width: 34em;
+}
+
+.previous_image {
+    position: absolute;
+    background-color: #FFF;
+    width: fit-content;
+    padding: 0.7em 1em 0.7em 0.8em;
+    border-radius: 100%;
+    left: -1.2em;
+    top: 32%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.previous_icon {
+    width: 0.7em;
+}
+
+.main_image_img {
+    border-radius: 15px;
+}
+
+.next_image {
+    position: absolute;
+    background-color: #FFF;
+    width: fit-content;
+    padding: 0.7em 0.8em 0.7em 1em;
+    border-radius: 100%;
+    right: -1.2em;
+    top: 32%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.next_icon {
+    width: 0.7em;
+}
+
+.thumb_images_container {
+    margin-top: 1em;
+}
+
+.thumb_images_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.thumb_image {
+    width: 5em;
+}
+
+.thumb_emphasis {
+    position: absolute;
+    background-color: hsl(0, 0%, 100%, .75);
+    width: 5em;
+    height: 5em;    
+    border-radius: 5px;
+    border: 2px solid var(--orange);
+}
+
+.thumb_image img {
+    border-radius: 5px;
+}
+
+.image_modal_close:hover {
+    cursor: pointer;
+    filter: hue-rotate(140deg) brightness(1.6) saturate(1000%);
+}
+
+.next_image:hover, .previous_image:hover {
+    cursor: pointer;
+}
+
+.previous_icon:hover, .next_image:hover {
+    filter: hue-rotate(140deg) brightness(2.2) saturate(1000%);
+}
+
+.thumb_image:hover {
+    background-color: var(--white);
+    border-radius: 5px;
+    height: 5em;
+}
+
+.thumb_emphasis_image:hover{
+    cursor: pointer;
+    filter: opacity(0.6);
+}   
+
+@media (max-width:650px) {
+    .image_modal_overlay{
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .image_modal_overlay{
+        display: none;
+    }
+}

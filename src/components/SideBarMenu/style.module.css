@@ -1,0 +1,50 @@
+
+.side_bar_overlay {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.side_bar_container{
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    background-color: var(--white);
+    width: 15em;
+    height: 100vh;
+    padding: 2em;
+}
+
+.close {
+    width: 1em;
+    margin-bottom: 2em;
+}
+
+.side_items_list {
+    list-style-type: none;
+}
+
+.side_item {
+    padding: 0.8em 0;
+    list-style: none;
+}
+
+.side_item a {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*-------------------- hover status --------------------*/
+.close:hover {
+    cursor: pointer;
+}
+
+.side_item a:hover {
+    cursor: pointer;
+}

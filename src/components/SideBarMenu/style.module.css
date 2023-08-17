@@ -3,10 +3,16 @@
     position: fixed;
     top: 0em;
     left: 0em;
+    transform: translateX(-100vw);
+    transition: transform 400ms ease-in-out;
     background-color: hsla(0, 0%, 0%, 0.8);
     width: 100vw;
     height: 100vh;
     z-index: 100;
+}
+
+.side_bar_overlay_open {
+    transform: translateX(0px);
 }
 
 .side_bar_container{

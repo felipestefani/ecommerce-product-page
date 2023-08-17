@@ -14,7 +14,7 @@ const MenuHamburguer = () => {
         <div className={style.menu_visible}>
             <div className={style.menu_hamburguer_container}>
             <img className={style.menu_hamburguer_img} src={menu} alt="menu hamburguer" onClick={openSideBar} /> 
-            <SideBarMenu isOpen={isSideOpen} closeSidebar={closeSidebar}/>
+            <SideBarMenu isOpen={isSideOpen} closeSide={closeSidebar}/>
             </div>
         </div>
     )

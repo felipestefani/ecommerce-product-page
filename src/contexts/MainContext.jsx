@@ -12,7 +12,6 @@ const MainProvider = ({children}) => {
             value={{
                 quantity, setQuantity,
                 quantityInCart, setQuantityInCart,
-                
             }}
         >
             {children}

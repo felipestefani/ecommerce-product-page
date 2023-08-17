@@ -25,6 +25,7 @@
     justify-content: space-between;
     padding-top: 2em;
 }
+
 .thumb_container{
     position: relative;
     width: fit-content;
@@ -169,5 +170,15 @@
     }
     .display_thumbnails {
         display: none;
+    }
+}
+
+.product_image:hover {
+    cursor: pointer;
+}
+
+@media (max-width:650px) {
+    .product_image:hover {
+        cursor:auto;
     }
 }

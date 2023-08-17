@@ -10,6 +10,7 @@ import thumb_4 from '../../assets/images/image-product-4-thumbnail.jpg'
 import next from "../../assets/images/icon-next.svg";
 import previous from "../../assets/images/icon-previous.svg";
 import { useState } from "react";
+import ImageModal from "../ImagesModal";
 
 const DisplaySection = () => {
 
@@ -17,6 +18,10 @@ const DisplaySection = () => {
     const thumbnails = [thumb_1, thumb_2, thumb_3, thumb_4]
     const [mainImage, setMainImage] = useState(product_1)
     const [thumbImage, setThumbImage] = useState('')
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const openModal = () => setIsModalOpen(true)
+    const closeModal = () => setIsModalOpen(false)
 
     const changeToImage = (index,thumb) => {
         setMainImage(images[index])
@@ -43,7 +48,8 @@ const DisplaySection = () => {
                         <img className={style.previous_icon} src={previous} alt="previous icon" onClick={previousImage}/>
                     </div>
                 </div>
-                <img className={style.product_image} src={mainImage} alt="main product image"/>    
+                <img className={style.product_image} src={mainImage} alt="main product image" onClick={openModal} /> 
+                <ImageModal isOpen={isModalOpen} onClose={closeModal} />   
                 <div className={style.display_next_button}>
                     <div className={style.next_button}>
                         <img className={style.next_icon} src={next} alt="next icon" onClick={nextImage}/>
